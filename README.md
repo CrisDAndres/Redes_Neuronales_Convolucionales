@@ -6,7 +6,7 @@ Este proyecto implementa redes neuronales convolucionales (CNN) utilizando Tenso
   <img src="img/img_app.png" alt="App" width="300px">
 </p>
 <p align="center">
-  <b>Streamlit App 📱 disponible </b><a href="https://agrotechproject00.streamlit.app/">aquí</a>!
+  <b>Streamlit App 📱 disponible </b><a href="https://digit-recognition0-9.streamlit.app/">aquí</a>!
 </p>
 
 ## Estructura del proyecto 📂
