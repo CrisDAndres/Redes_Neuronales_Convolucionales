@@ -14,15 +14,9 @@ El proyecto consiste en los siguientes archivos:
 
 ## Tecnologías utilizadas
 
-- **TensorFlow**: Librería principal para la creación y entrenamiento de redes neuronales.
-- **Keras**: API de alto nivel que se utiliza como interfaz para TensorFlow en este proyecto.
-- **Streamlit**: Framework utilizado para desarrollar la interfaz web interactiva.
-- **Jupyter Notebook**: Utilizado para el desarrollo y documentación del proceso de entrenamiento del modelo.
-- **Python**: Lenguaje de programación en el cual está implementado todo el proyecto.
-
-- ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white): Biblioteca principal para la creación y entrenamiento de redes neuronales.
+- ![TensorFlow](https://img.shields.io/badge/TensorFlow-14354C?style=for-the-badge&logo=tensorflow&logoColor=white): Biblioteca principal para la creación y entrenamiento de redes neuronales.
 - ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white): API de alto nivel utilizada como interfaz para TensorFlow en este proyecto.
-- ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white): Framework utilizado para desarrollar la interfaz web interactiva.
+- ![Streamlit](https://img.shields.io/badge/Streamlit-2CA5E0?style=for-the-badge&logo=streamlit&logoColor=white): Framework utilizado para desarrollar la interfaz web interactiva.
 - ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white): Utilizado para el desarrollo y documentación del proceso de entrenamiento del modelo.
 - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white): Lenguaje de programación en el cual está implementado todo el proyecto.
   
