@@ -3,15 +3,34 @@ import tensorflow as tf
 import numpy as np
 from streamlit_drawable_canvas import st_canvas
 
-try:
-    # Cargar el modelo entrenado con redes neuronales convolucionales
-    modelo = tf.keras.models.load_model('models/pred_numeros.h5') 
-except Exception as e:
-    st.error(f"Error al cargar el modelo: {str(e)}")
+# Función para cargar el modelo
+def cargar_modelo():
+    try:
+        modelo = tf.keras.models.load_model('models/pred_numeros.h5')
+        return modelo
+    except Exception as e:
+        st.error(f"Error al cargar el modelo: {str(e)}")
+        return None
+# Función para procesar la imagen y hacer la predicción
+def procesar_prediccion(modelo, imagen):
+    # Asegurarse de que la imagen sea en escala de grises y redimensionarla
+    img = tf.image.resize(imagen, [28, 28])
+    img = tf.image.rgb_to_grayscale(img)
+    img = tf.squeeze(img)
+    img = tf.cast(img, tf.float32) / 255.0
+    
+    # Hacer la predicción
+    prediccion = modelo.predict(np.expand_dims(img, axis=0))
+    prediccion_numero = np.argmax(prediccion)
+    
+    return prediccion_numero
 
+# Cargar el modelo una vez al inicio de la aplicación
+modelo = cargar_modelo()
+
+# -----------------------------------------
 # Configurar la interfaz de Streamlit
 st.title("Reconocimiento de Dígitos Dibujados a Mano ✏️")
-
 st.markdown("Dibuja un número en el lienzo de abajo y presiona el botón 'Predecir' para ver la predicción.")
 
 # Tamaño del lienzo
