@@ -3,7 +3,7 @@
 Este proyecto implementa redes neuronales convolucionales (CNN) utilizando TensorFlow y Keras para el reconocimiento de dígitos escritos a mano en el conjunto de datos MNIST. Se incluyen técnicas de aumento de datos (*Data Augmentation*) para mejorar el rendimiento del modelo y una interfaz de usuario simple desarrollada con Streamlit que permite dibujar un dígito en un lienzo y obtener una predicción del modelo.
 
 <p align="center">
-  <img src="img/img_app.png" alt="App">
+  <img src="img/img_app.png" alt="App" width="300px">
 </p>
 <p align="center">
   <b>Streamlit App 📱 disponible </b><a href="https://agrotechproject00.streamlit.app/">aquí</a>!
@@ -18,7 +18,7 @@ El proyecto consiste en los siguientes archivos:
 - ``numeros.py``: Script de Python para la aplicación de Streamlit.
 - ``img/``: Carpeta que contiene imágenes del proyecto.
 
-## Tecnologías utilizadas
+## Tecnologías utilizadas 🛠️
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-14354C?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
