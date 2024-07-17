@@ -5,7 +5,7 @@ from streamlit_drawable_canvas import st_canvas
 
 try:
     # Cargar el modelo entrenado con redes neuronales convolucionales
-    modelo = tf.keras.models.load_model('models/pred_numeros') 
+    modelo = tf.keras.models.load_model('models/pred_numeros.h5') 
 except Exception as e:
     st.error(f"Error al cargar el modelo: {str(e)}")
 
