@@ -3,8 +3,11 @@ import tensorflow as tf
 import numpy as np
 from streamlit_drawable_canvas import st_canvas
 
-# Cargar el modelo entrenado con redes neuronales convolucionales
-modelo = tf.keras.models.load_model('models/pred_numeros.keras')
+try:
+    # Cargar el modelo entrenado con redes neuronales convolucionales
+    modelo = tf.keras.models.load_model('models/pred_numeros.keras')
+except Exception as e:
+    st.error(f"Error al cargar el modelo: {str(e)}")
 
 # Configurar la interfaz de Streamlit
 st.title("Reconocimiento de Dígitos Dibujados a Mano ✏️")
