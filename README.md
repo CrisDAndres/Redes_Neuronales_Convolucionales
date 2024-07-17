@@ -2,17 +2,23 @@
  
 Este proyecto implementa redes neuronales convolucionales (CNN) utilizando TensorFlow y Keras para el reconocimiento de dígitos escritos a mano en el conjunto de datos MNIST. Se incluyen técnicas de aumento de datos (*Data Augmentation*) para mejorar el rendimiento del modelo y una interfaz de usuario simple desarrollada con Streamlit que permite dibujar un dígito en un lienzo y obtener una predicción del modelo.
 
+<p align="center">
+  <img src="img/img_app.png" alt="App" width="300px">
+</p>
+<p align="center">
+  <b>Streamlit App 📱 disponible </b><a href="https://agrotechproject00.streamlit.app/">aquí</a>!
+</p>
+
 ## Estructura del proyecto 📂
 
 El proyecto consiste en los siguientes archivos:
 
 - ``notebook/``: Carpeta que contiene el notebook de Jupyter con el código utilizado para realizar el entrenamiento de la red neuronal, con explicaciones detalladas de cada paso.Folder available on the Google Drive link [Data](https://drive.google.com/drive/folders/1YNj80AnFaNC3GuXIMYGxBIITjxB3YKO6?usp=drive_link), containing the data files in csv format.
-
 - ``models/``: Carpeta que contiene el modelo de la red neuronal entrenada en formato ``.keras``.
-
 - ``numeros.py``: Script de Python para la aplicación de Streamlit.
+- ``img/``: Carpeta que contiene imágenes del proyecto.
 
-## Tecnologías utilizadas
+## Tecnologías utilizadas 🛠️
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-14354C?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
@@ -31,7 +37,6 @@ Para hacer el modelo más accesible e interactivo, se ha desarrollado una interf
 ## Instrucciones de ejecución 💻
 Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 
-0. Asegúrate de tener instalado Python XX o superior.
 1. Clona este repositorio en tu máquina local.
 2. Descarga las carpetas ``models`` y ``notebook``, así como el scrip de Python.
 3. Instala las dependencias necesarias ejecutando ``pip install -r requirements.txt``.
@@ -39,4 +44,4 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 5. Dibuja✏️ un dígito del 0 al 9 en el lienzo y presiona el botón de **PREDECIR** para ver la predicción. 
 
 ## Contacto 📧
-Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto conmigo. Puedes ponerte en contacto conmigo a través de mis redes sociales.
+Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto conmigo. Puedes hacerlo a través de mis redes sociales.
