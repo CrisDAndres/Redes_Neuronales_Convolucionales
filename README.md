@@ -14,7 +14,7 @@ Este proyecto implementa redes neuronales convolucionales (CNN) utilizando Tenso
 El proyecto consiste en los siguientes archivos:
 
 - ``notebook/``: Carpeta que contiene el notebook de Jupyter con el código utilizado para realizar el entrenamiento de la red neuronal, con explicaciones detalladas de cada paso.Folder available on the Google Drive link [Data](https://drive.google.com/drive/folders/1YNj80AnFaNC3GuXIMYGxBIITjxB3YKO6?usp=drive_link), containing the data files in csv format.
-- ``models/``: Carpeta que contiene el modelo de la red neuronal entrenada en formato ``.keras``.
+- ``models/``: Carpeta que contiene el modelo de la red neuronal entrenada en formato ``.h5``.
 - ``numeros.py``: Script de Python para la aplicación de Streamlit.
 - ``img/``: Carpeta que contiene imágenes del proyecto.
 
