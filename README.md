@@ -44,4 +44,4 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 5. Dibuja✏️ un dígito del 0 al 9 en el lienzo y presiona el botón de **PREDECIR** para ver la predicción. 
 
 ## Contacto 📧
-Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto conmigo. Puedes ponerte en contacto conmigo a través de mis redes sociales.
+Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto conmigo. Puedes hacerlo a través de mis redes sociales.
