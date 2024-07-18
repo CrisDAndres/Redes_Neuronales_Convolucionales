@@ -20,9 +20,9 @@ El proyecto consiste en los siguientes archivos:
 
 ## Tecnologías utilizadas 🛠️
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-14354C?style=for-the-badge&logo=tensorflow&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-2CA5E0?style=for-the-badge&logo=streamlit&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
   
