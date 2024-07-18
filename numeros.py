@@ -4,6 +4,7 @@ import numpy as np
 from streamlit_drawable_canvas import st_canvas
 
 # Función para cargar el modelo
+@st.cache_data()
 def cargar_modelo():
     try:
         modelo = tf.keras.models.load_model('models/pred_numeros.h5')
