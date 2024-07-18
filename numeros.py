@@ -54,6 +54,12 @@ if st.button("Predecir"):
         # Obtener la imagen dibujada
         img = canvas_result.image_data.astype(np.uint8)
 
+        # Verificar y ajustar canales de color
+        if img.shape[-1] == 4:  # Si tiene 4 canales (RGBA), convertir a 3 canales (RGB)
+            img = img[..., :3]
+        elif img.shape[-1] != 3:  # Si no tiene 3 canales (RGB)
+            st.warning("La imagen no tiene 3 canales RGB. Asegúrate de dibujar en RGB.")
+
         # Redimensionar y convertir a escala de grises
         img = tf.image.resize(img, [28, 28]) # redimensionamos a 28x28 px, que es como hemos entrenado el modelo
         img = tf.image.rgb_to_grayscale(img) # se convierte a escala de grises si no lo está
