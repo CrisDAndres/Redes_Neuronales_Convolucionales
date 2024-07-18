@@ -43,5 +43,9 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 4. Ejecuta el archivo ``numeros.py`` y asegúrate de que has descargado las carpetas en el mismo entorno. A continuación, abre la terminal y ejecuta el siguiente comando: ``streamlit run numeros.py``. Esto abrirá el navegador web ``http://localhost:8501/`` que te llevará a la aplicación.
 5. Dibuja✏️ un dígito del 0 al 9 en el lienzo y presiona el botón de **PREDECIR** para ver la predicción. 
 
+### To do ⚙️
+
+- [ ] Corrección de *warnings* en Streamlit.
+
 ## Contacto 📧
 Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto conmigo. Puedes hacerlo a través de mis redes sociales.
