@@ -59,6 +59,8 @@ if st.button("Predecir"):
             img = img[..., :3]
         elif img.shape[-1] != 3:  # Si no tiene 3 canales (RGB)
             st.warning("La imagen no tiene 3 canales RGB. Asegúrate de dibujar en RGB.")
+        else:
+            pass
 
         # Redimensionar y convertir a escala de grises
         img = tf.image.resize(img, [28, 28]) # redimensionamos a 28x28 px, que es como hemos entrenado el modelo
