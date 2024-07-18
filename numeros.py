@@ -11,16 +11,23 @@ def cargar_modelo():
     except Exception as e:
         st.error(f"Error al cargar el modelo: {str(e)}")
         return None
+
 # Función para procesar la imagen y hacer la predicción
 def procesar_prediccion(modelo, imagen):
     # Asegurarse de que la imagen sea en escala de grises y redimensionarla
+    print(f"Dimensiones de la imagen original: {imagen.shape}")
     img = tf.image.resize(imagen, [28, 28])
+    print(f"Dimensiones de la imagen redimensionada: {img.shape}")
     img = tf.image.rgb_to_grayscale(img)
+    print(f"Dimensiones de la imagen en escala de grises: {img.shape}")
     img = tf.squeeze(img)
+    print(f"Dimensiones de la imagen después de squeeze: {img.shape}")
     img = tf.cast(img, tf.float32) / 255.0
     
     # Hacer la predicción
+    print(f"Dimensiones de la imagen antes de la predicción: {img.shape}")
     prediccion = modelo.predict(np.expand_dims(img, axis=0))
+    print(f"Predicción obtenida: {prediccion}")
     prediccion_numero = np.argmax(prediccion)
     
     return prediccion_numero
@@ -54,23 +61,23 @@ if st.button("Predecir"):
         # Obtener la imagen dibujada
         img = canvas_result.image_data.astype(np.uint8)
 
-        # # Asegurarse de que la imagen sea en escala de grises
-        # if img.shape[-1] == 4:  # Si tiene 4 canales (RGBA), convertir a 3 canales (RGB)
-        #     img = img[..., :3]
-        # elif img.shape[-1] != 3:  # Si no tiene 3 canales (RGB), manejar el caso según el formato
-        #     pass
+        print(f"Dimensiones de la imagen dibujada: {img.shape}")
 
         # Redimensionar y convertir a escala de grises
         img = tf.image.resize(img, [28, 28]) # redimensionamos a 28x28 px, que es como hemos entrenado el modelo
+        print(f"Dimensiones de la imagen redimensionada: {img.shape}")
         img = tf.image.rgb_to_grayscale(img) # se convierte a escala de grises si no lo está
+        print(f"Dimensiones de la imagen en escala de grises: {img.shape}")
         img = tf.squeeze(img)  # Asegurar que tenga solo un canal de color
+        print(f"Dimensiones de la imagen después de squeeze: {img.shape}")
 
         # Normalizar la imagen
         img = tf.cast(img, tf.float32) / 255.0
+        print(f"Dimensiones de la imagen después de normalización: {img.shape}")
 
         # Hacer la predicción
-        prediccion = modelo.predict(np.expand_dims(img, axis=0)) # agrega una dimensión adicional al principio de la matriz de la imagen, convirtiéndola de (28, 28) a (1, 28, 28).
-        prediccion_numero = np.argmax(prediccion) # determina cual es la clasificacion predicha con mayor probabilidad. Devuelve el índice del valor máximo
+        prediccion_numero = procesar_prediccion(modelo, img)
+        print(f"Número predicho: {prediccion_numero}")
 
         # Mostrar la predicción
         st.write(f"El modelo predice que el número dibujado es: {prediccion_numero}")
